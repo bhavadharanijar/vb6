@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-int main(void) {
-	int n,i,j;
-	scanf("%d",&n);
+int main() {
+	int num,i,j;
+	scanf("%d",&num);
 	
-	int a[n];
-	for(i=0;i<n;i++)
+	int a[num];
+	for(i=0;i<num;i++)
 	scanf("%d",&a[i]);
-	for(i=0;i<n-1;i++)
+	for(i=0;i<num-1;i++)
 	{
-		for(j=i+1;j<n;j++)
+		for(j=i+1;j<num;j++)
 		{
 			if(a[i]==a[j])
 			{
@@ -17,7 +17,7 @@ int main(void) {
 			exit(0);
 			}
 		}
-		if(i==n-2)
+		if(i==num-2)
 		printf("unique");
 	}
 
